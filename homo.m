@@ -4,4 +4,3 @@ trans = trans_general(x1,y1,z1);
 hom = [Rot , trans];
 hom = [hom;[0,0,0,1]];
 end
-
