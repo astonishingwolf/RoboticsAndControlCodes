@@ -1,0 +1,10 @@
+function [Rotm] = rotation_general(x,y,z,rot)
+rot = deg2rad(rot);
+disp(rot);
+a = cos(rot);
+b = sin(rot);
+disp(x*x*(1-a));
+
+Rotm = [x*x*(1-a),x*y*(1-a) - z*b,x*z(1-a)+y*b,x*y*(1-a)+z*b,y*y*(1-a)+a,y*z*(1-a)-x*b;x*z*(1-a) + y*b , x*z*(1-a) + y*b , z*z*(1-a)+a];
+end
+
