@@ -1,0 +1,8 @@
+function [Trans] = DH(theta,d,alpha,a)
+ct = cos(theta);
+st = sin(theta);
+ca = cos(alpha);
+sa = sin(alpha);
+Trans = 
+end
+
